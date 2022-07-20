@@ -44,6 +44,12 @@ body {
     background: #DD0000;
     border-radius: 5px;
     display: inline-block;
+    transition: .5s ease-in-out;
+}
+.btn:hover {
+    background-color: #FFFFFF;
+    color:#DD0000;
+    transform: scale(.9);
 }
 .btn i {
     margin-left: 5px;
@@ -52,8 +58,6 @@ body {
     width: 550px;
     height: 570px;
 }
-/* Hero Section Button Animation */
-
 /* Blog Section */
 .blogs {
     display: flex;
