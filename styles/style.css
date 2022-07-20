@@ -11,7 +11,6 @@ body {
 }
 /* Hero Section */
 .hero {
-    width: 1200px;
     margin-top: 40px;
     background: #161616;
     border-radius: 30px;
@@ -125,6 +124,20 @@ body {
     display: inline-block;
     font-size: 15px;
     color: #161616b3;
+}
+.tablet-button {
+    display: none;
+}
+.view-all-btn {
+    display: block;
+    text-align: center;
+    width: 130px;
+    margin: 30px auto 0;
+    text-decoration: none;
+    background: red;
+    padding: 10px;
+    color: #fff;
+    border-radius: 8px;
 }
 /* Footer */
 footer {
@@ -240,4 +253,75 @@ footer {
 }
 .group img {
     width: 50%;
+}
+/* ----------- 
+Responsive 
+-------------- */
+
+/* Tablet Device */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .container {
+        width: 700px;
+        margin: 0 auto;
+    }
+    .hero {
+        margin: 30px;
+    }
+    .hero-info {
+        width: 50%;
+        padding-left: 30px;
+      }
+    .hero-info h1 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 55px;
+    }
+    .hero-image {
+        width: 50%;
+    }
+    .hero-image img {
+        width: 100%;
+    }
+    .blogs {
+        flex-direction: column;
+    }
+    .blog-bar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #FFFFFF;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+    .blog-btn {
+        border: 1px solid #ddd;
+        flex-basis: 22%;
+        padding: 20px ;
+    }
+    .all-blogs {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 24px;
+    }
+    .blog-tablet {
+        display: none;
+    }
+    .tablet-button {
+        display: block;
+    }
+    .footer-info {
+        width: 700px;
+        margin: 0 auto;
+    }
+    .footer-info ul {
+        width: 700px;
+        margin: 0 auto;
+        justify-content: center;
+        padding: 0;
+    }
+    .footer-info ul li {
+        flex-basis: 24%;
+        padding-top: 20px;
+    }
 }
